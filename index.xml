@@ -7,11 +7,43 @@
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright © 2023 Ryuzu2048</copyright><atom:link href="https://ryuzu2048.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>【Google Chrome】キャッシュの消去とハード再読み込み</title>
+      <title>【Go】timeの2006-01-02T15:04:05Zについて</title>
       <link>https://ryuzu2048.github.io/post/4/</link>
-      <pubDate>Mon, 06 Feb 2023 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 07 Feb 2023 00:00:00 +0000</pubDate>
       
       <guid>https://ryuzu2048.github.io/post/4/</guid>
+      <description>
+        
+          
+            【Go】のdateの2006-01-02T15:04:05Zについて
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>2023年02月07日（火）</title>
+      <link>https://ryuzu2048.github.io/daily/2023/02/20230207/</link>
+      <pubDate>Tue, 07 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://ryuzu2048.github.io/daily/2023/02/20230207/</guid>
+      <description>
+        
+          
+            2023年02月07日（火）
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>【Google Chrome】キャッシュの消去とハード再読み込み</title>
+      <link>https://ryuzu2048.github.io/post/3/</link>
+      <pubDate>Mon, 06 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://ryuzu2048.github.io/post/3/</guid>
       <description>
         
           
@@ -24,10 +56,10 @@
     
     <item>
       <title>2023年02月06日（月）</title>
-      <link>https://ryuzu2048.github.io/post/3/</link>
+      <link>https://ryuzu2048.github.io/daily/2023/02/20230206/</link>
       <pubDate>Mon, 06 Feb 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://ryuzu2048.github.io/post/3/</guid>
+      <guid>https://ryuzu2048.github.io/daily/2023/02/20230206/</guid>
       <description>
         
           

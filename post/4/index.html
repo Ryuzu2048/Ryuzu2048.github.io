@@ -11,7 +11,7 @@
   
   >
   <head>
-<title>【Google Chrome】キャッシュの消去とハード再読み込み | 睡眠負債</title>
+<title>【Go】timeの2006-01-02T15:04:05Zについて | 睡眠負債</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -31,14 +31,14 @@
 <meta property="og:locale" content="ja" />
 
 <meta property="og:type" content="article">
-<meta name="description" content="【Google Chrome】キャッシュの消去とハード再読み込み" />
+<meta name="description" content="【Go】のdateの2006-01-02T15:04:05Zについて" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:creator" content="@Ryuzu2048">
-<meta name="twitter:title" content="【Google Chrome】キャッシュの消去とハード再読み込み" />
+<meta name="twitter:title" content="【Go】timeの2006-01-02T15:04:05Zについて" />
 <meta name="twitter:image" content="https://ryuzu2048.github.io/images/thumbnail.png"/>
 <meta property="og:url" content="https://ryuzu2048.github.io/post/4/" />
-<meta property="og:title" content="【Google Chrome】キャッシュの消去とハード再読み込み" />
-<meta property="og:description" content="【Google Chrome】キャッシュの消去とハード再読み込み" />
+<meta property="og:title" content="【Go】timeの2006-01-02T15:04:05Zについて" />
+<meta property="og:description" content="【Go】のdateの2006-01-02T15:04:05Zについて" />
 <meta property="og:image" content="https://ryuzu2048.github.io/images/thumbnail.png" />
 
 <link rel="apple-touch-icon" sizes="180x180" href="https://ryuzu2048.github.io/icons/apple-touch-icon.png">
@@ -141,7 +141,7 @@
   
 <div class="grid-inverse wrap content">
   <article class="post_content">
-    <h1 class="post_title">【Google Chrome】キャッシュの消去とハード再読み込み</h1>
+    <h1 class="post_title">【Go】timeの2006-01-02T15:04:05Zについて</h1>
   <div class="post_meta">
     <span><svg class="icon">
   <title>calendar</title>
@@ -149,14 +149,19 @@
 </svg>
 </span>
     <span class="post_date">
-      <time itemprop="datePublished" datetime="2023-02-06 00:00:00 &#43;0000 UTC">
-        2023-02-06</time>
+      <time itemprop="datePublished" datetime="2023-02-07 00:00:00 &#43;0000 UTC">
+        2023-02-07</time>
+    </span>
+    <span class="post_date_lastmod">
+      <time itemprop="dateModified" datetime="2023-02-06 23:45:31 &#43;0900 JST">
+        （Last Updated : 2023-02-06）&nbsp;
+      </time>
     </span>
     <span class="post_time"> · 1 分で読了</span>
     <span class="page_only">&nbsp;·
   <div class="post_share">
     共有する:
-    <a href="https://twitter.com/intent/tweet?text=%e3%80%90Google%20Chrome%e3%80%91%e3%82%ad%e3%83%a3%e3%83%83%e3%82%b7%e3%83%a5%e3%81%ae%e6%b6%88%e5%8e%bb%e3%81%a8%e3%83%8f%e3%83%bc%e3%83%89%e5%86%8d%e8%aa%ad%e3%81%bf%e8%be%bc%e3%81%bf&url=https%3a%2f%2fryuzu2048.github.io%2fpost%2f4%2f&tw_p=tweetbutton" class="twitter" title="共有する Twitter" target="_blank" rel="nofollow">
+    <a href="https://twitter.com/intent/tweet?text=%e3%80%90Go%e3%80%91time%e3%81%ae2006-01-02T15%3a04%3a05Z%e3%81%ab%e3%81%a4%e3%81%84%e3%81%a6&url=https%3a%2f%2fryuzu2048.github.io%2fpost%2f4%2f&tw_p=tweetbutton" class="twitter" title="共有する Twitter" target="_blank" rel="nofollow">
       <svg class="icon">
   <title>twitter</title>
   <use xlink:href="#twitter"></use>
@@ -173,18 +178,17 @@
   </span>
   </div>
 
-    <div class="post_body"><p>特定のページだけキャッシュを消したい。</p>
-<h2 id="キャッシュの消去とハード再読み込み">キャッシュの消去とハード再読み込み</h2>
+    <div class="post_body"><h2 id="結論">結論</h2>
 <blockquote>
-<p>Empty Cache And Hard Reload forces the browser to go the network for all resources.<br>
--- <cite><a href="https://developer.chrome.com/docs/devtools/network/">Inspect network activity</a></cite></p>
+<p>2006-01-02T15:04:05Z<br>
+-- <cite><a href="https://pkg.go.dev/github.com/Azure/go-autorest/autorest/date@v0.3.0">date (github.com/Azure/go-autorest/autorest/date)</a></cite></p>
 </blockquote>
-<h2 id="方法">方法</h2>
-<h3 id="1">1</h3>
-<p>デベロッパーツールを開く<br>
-<a href="https://developer.chrome.com/docs/devtools/open/">Open Chrome DevTools</a><br></p>
-<h3 id="2">2</h3>
-<p>リロードボタンを長押しした後に、<strong>キャッシュの消去とハード再読み込み</strong>を選択する。</p>
+<h2 id="参考">参考</h2>
+<ul>
+<li><a href="https://pkg.go.dev/github.com/Azure/go-autorest/autorest/date">date (github.com/Azure/go-autorest/autorest/date)</a></li>
+<li><a href="https://cs.opensource.google/go/go/+/refs/tags/go1.20:/src/time/format.go">src/time/format.go</a></li>
+<li><a href="https://datatracker.ietf.org/doc/rfc3339/">RFC 3339 Date and Time on the Internet: Timestamp</a></li>
+</ul>
 
     </div>
 <div class="post_comments">
@@ -211,10 +215,16 @@
     <h2 class="mt-4">最近の投稿</h2>
     <ul class="flex-column">
       <li>
-        <a href="https://ryuzu2048.github.io/post/4/" class="nav-link" title="【Google Chrome】キャッシュの消去とハード再読み込み">【Google Chrome】キャッシュの消去とハード再読み込み</a>
+        <a href="https://ryuzu2048.github.io/post/4/" class="nav-link" title="【Go】timeの2006-01-02T15:04:05Zについて">【Go】timeの2006-01-02T15:04:05Zについて</a>
       </li>
       <li>
-        <a href="https://ryuzu2048.github.io/post/3/" class="nav-link" title="2023年02月06日（月）">2023年02月06日（月）</a>
+        <a href="https://ryuzu2048.github.io/daily/2023/02/20230207/" class="nav-link" title="2023年02月07日（火）">2023年02月07日（火）</a>
+      </li>
+      <li>
+        <a href="https://ryuzu2048.github.io/post/3/" class="nav-link" title="【Google Chrome】キャッシュの消去とハード再読み込み">【Google Chrome】キャッシュの消去とハード再読み込み</a>
+      </li>
+      <li>
+        <a href="https://ryuzu2048.github.io/daily/2023/02/20230206/" class="nav-link" title="2023年02月06日（月）">2023年02月06日（月）</a>
       </li>
       <li>
         <a href="https://ryuzu2048.github.io/post/2/" class="nav-link" title="hugoserverコマンドメモ">hugoserverコマンドメモ</a>
@@ -228,12 +238,12 @@
       <nav class="tags_nav">
         <a href='https://ryuzu2048.github.io/categories/%E6%97%A5%E8%A8%98%E4%BB%A5%E5%A4%96/' class="post_tag button button_translucent" title="日記以外">
           日記以外
-          <span class="button_tally">3</span>
+          <span class="button_tally">4</span>
         </a>
         
         <a href='https://ryuzu2048.github.io/categories/%E6%97%A5%E8%A8%98/' class="post_tag button button_translucent" title="日記">
           日記
-          <span class="button_tally">1</span>
+          <span class="button_tally">2</span>
         </a>
         
         
