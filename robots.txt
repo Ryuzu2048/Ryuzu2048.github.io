@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /categories/
+Disallow: /tags/
+Disallow: /search/
+Disallow: /privacy-policy/
+Sitemap: https://ryuzu2048.github.io/sitemap.xml
