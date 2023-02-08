@@ -60,26 +60,26 @@
 
     <style>
 
-      .xPrevNextLink::after {
+
+      .PrevNextLink::after {
         display: block;
         content: "";
         clear: both;
       }
-      .xPrevNextLink_prev {
+      .PrevLink {
         display: block;
         float: left;
       }
-      .xPrevNextLink_prev::before {
-        content: "≪";
+      .PrevLink::before {
+        content: "←";
       }
-      .xPrevNextLink_next {
+      .NextLink {
         display: block;
         float: right;
         text-align: right;
-
       }
-      .xPrevNextLink_next::after {
-        content: "≫";
+      .NextLink::after {
+        content: "→";
       }
 
 
@@ -209,18 +209,18 @@
     </div>
 
 
-
+    
     <br>
     <br>
     <br>
-    <div class="xPrevNextLink">
+    <div class="PrevNextLink">
       
-        <div class="xPrevNextLink_prev">
+        <div class="PrevLink">
           <a href="https://ryuzu2048.github.io/search/">Search</a>
         </div>
       
       
-        <div class="xPrevNextLink_next">
+        <div class="NextLink">
           <a href="https://ryuzu2048.github.io/about/">About Me</a>
         </div>
       
