@@ -9,7 +9,7 @@
   
   >
   <head>
-<title>おはよう世界 | 睡眠負債</title>
+<title>【Lua言語】備忘録 | 睡眠負債</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -29,21 +29,21 @@
 <meta property="og:locale" content="ja" />
 
 <meta property="og:type" content="article">
-<meta name="description" content="初めての投稿" />
+<meta name="description" content="【Lua言語】備忘録" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:creator" content="@Ryuzu2048">
-<meta name="twitter:title" content="おはよう世界" />
+<meta name="twitter:title" content="【Lua言語】備忘録" />
 <meta name="twitter:image" content="https://ryuzu2048.github.io/images/thumbnail.png"/>
-<meta property="og:url" content="https://ryuzu2048.github.io/post/1/" />
-<meta property="og:title" content="おはよう世界" />
-<meta property="og:description" content="初めての投稿" />
+<meta property="og:url" content="https://ryuzu2048.github.io/post/6/" />
+<meta property="og:title" content="【Lua言語】備忘録" />
+<meta property="og:description" content="【Lua言語】備忘録" />
 <meta property="og:image" content="https://ryuzu2048.github.io/images/thumbnail.png" />
 
 <link rel="apple-touch-icon" sizes="180x180" href="https://ryuzu2048.github.io/icons/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://ryuzu2048.github.io/icons/favicon-32x32.png">
 <link rel="manifest" href="https://ryuzu2048.github.io/icons/site.webmanifest">
 
-<link rel="canonical" href="https://ryuzu2048.github.io/post/1/">
+<link rel="canonical" href="https://ryuzu2048.github.io/post/6/">
 
 
 
@@ -169,7 +169,7 @@
   
 <div class="grid-inverse wrap content">
   <article class="post_content">
-    <h1 class="post_title">おはよう世界</h1>
+    <h1 class="post_title">【Lua言語】備忘録</h1>
   <div class="post_meta">
     <span><svg class="icon">
   <title>calendar</title>
@@ -177,20 +177,20 @@
 </svg>
 </span>
     <span class="post_date">
-      <time itemprop="datePublished" datetime="2023-02-05 00:00:00 &#43;0000 UTC">
-        2023-02-05</time>
+      <time itemprop="datePublished" datetime="2023-02-09 00:00:00 &#43;0000 UTC">
+        2023-02-09</time>
     </span>
     <span class="post_time"> · 1 分で読了</span>
     <span class="page_only">&nbsp;·
   <div class="post_share">
     共有する:
-    <a href="https://twitter.com/intent/tweet?text=%e3%81%8a%e3%81%af%e3%82%88%e3%81%86%e4%b8%96%e7%95%8c&url=https%3a%2f%2fryuzu2048.github.io%2fpost%2f1%2f&tw_p=tweetbutton" class="twitter" title="共有する Twitter" target="_blank" rel="nofollow">
+    <a href="https://twitter.com/intent/tweet?text=%e3%80%90Lua%e8%a8%80%e8%aa%9e%e3%80%91%e5%82%99%e5%bf%98%e9%8c%b2&url=https%3a%2f%2fryuzu2048.github.io%2fpost%2f6%2f&tw_p=tweetbutton" class="twitter" title="共有する Twitter" target="_blank" rel="nofollow">
       <svg class="icon">
   <title>twitter</title>
   <use xlink:href="#twitter"></use>
 </svg>
 
-    <a href="https://ryuzu2048.github.io/post/1/" title="Copy Link" class="link link_yank">
+    <a href="https://ryuzu2048.github.io/post/6/" title="Copy Link" class="link link_yank">
       <svg class="icon">
   <title>copy</title>
   <use xlink:href="#copy"></use>
@@ -201,9 +201,119 @@
   </span>
   </div>
 
-    <div class="post_body"><p>初投稿です。<br>
-睡眠に支障をきたさない程度に更新します。<br></p>
-
+      <div class="post_toc">
+        <h2>目次</h2>
+        <nav id="TableOfContents">
+  <ol>
+    <li>
+      <ol>
+        <li><a href="#公式ページ">公式ページ</a></li>
+        <li><a href="#公式ドキュメント">公式ドキュメント</a>
+          <ol>
+            <li><a href="#コメント">コメント</a></li>
+            <li><a href="#ioread">io.read</a></li>
+            <li><a href="#print">print</a></li>
+            <li><a href="#if">if</a></li>
+            <li><a href="#論理演算子">論理演算子</a></li>
+            <li><a href="#for">for</a></li>
+          </ol>
+        </li>
+      </ol>
+    </li>
+  </ol>
+</nav>
+      </div>
+      <br>
+      <br>
+    
+    <div class="post_body"><h2 id="公式ページ">公式ページ</h2>
+<ul>
+<li><a href="https://lua.org">Lua.org</a></li>
+</ul>
+<h2 id="公式ドキュメント">公式ドキュメント</h2>
+<ul>
+<li><a href="https://www.lua.org/docs.html">Lua: documentation</a></li>
+</ul>
+<br>
+<br>
+<h3 id="コメント">コメント</h3>
+<ul>
+<li><a href="https://www.lua.org/manual/5.4/manual.html#3.1">3.1 – Basic Functions</a></li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-lua" data-lang="lua"><span class="line"><span class="ln">1</span><span class="cl"><span class="c1">-- コメント行</span>
+</span></span><span class="line"><span class="ln">2</span><span class="cl">
+</span></span><span class="line"><span class="ln">3</span><span class="cl"><span class="cm">--[[
+</span></span></span><span class="line"><span class="ln">4</span><span class="cl"><span class="cm">    コメント1行目
+</span></span></span><span class="line"><span class="ln">5</span><span class="cl"><span class="cm">    コメント2行目
+</span></span></span><span class="line"><span class="ln">6</span><span class="cl"><span class="cm">--]]</span>
+</span></span></code></pre></div><h3 id="ioread">io.read</h3>
+<ul>
+<li><a href="https://www.lua.org/manual/5.4/manual.html#pdf-io.read">io.read</a></li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-lua" data-lang="lua"><span class="line"><span class="ln">1</span><span class="cl"><span class="n">a</span> <span class="o">=</span> <span class="n">io.read</span><span class="p">()</span>
+</span></span><span class="line"><span class="ln">2</span><span class="cl"><span class="n">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="ln">1</span><span class="cl">Hello World
+</span></span><span class="line"><span class="ln">2</span><span class="cl">Hello World
+</span></span></code></pre></div><h3 id="print">print</h3>
+<ul>
+<li><a href="https://www.lua.org/manual/5.4/manual.html#pdf-print">print</a></li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-lua" data-lang="lua"><span class="line"><span class="ln">1</span><span class="cl"><span class="n">a</span> <span class="o">=</span> <span class="s1">&#39;Hello World&#39;</span>
+</span></span><span class="line"><span class="ln">2</span><span class="cl"><span class="n">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="ln">1</span><span class="cl">Hello World
+</span></span></code></pre></div><h3 id="if">if</h3>
+<ul>
+<li><a href="https://www.lua.org/manual/5.4/manual.html#9">9 – The Complete Syntax of Lua</a></li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-lua" data-lang="lua"><span class="line"><span class="ln"> 1</span><span class="cl"><span class="n">a</span> <span class="o">=</span> <span class="s1">&#39;qwerty&#39;</span>
+</span></span><span class="line"><span class="ln"> 2</span><span class="cl">
+</span></span><span class="line"><span class="ln"> 3</span><span class="cl"><span class="c1">-- aがqwertyのとき </span>
+</span></span><span class="line"><span class="ln"> 4</span><span class="cl"><span class="kr">if</span> <span class="n">a</span> <span class="o">=</span> <span class="s1">&#39;qwerty&#39;</span> <span class="kr">then</span>
+</span></span><span class="line"><span class="ln"> 5</span><span class="cl">    <span class="n">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+</span></span><span class="line"><span class="ln"> 6</span><span class="cl"><span class="c1">-- aがasdfghのとき</span>
+</span></span><span class="line"><span class="ln"> 7</span><span class="cl"><span class="kr">elseif</span> <span class="n">a</span> <span class="o">=</span> <span class="s1">&#39;asdfgh&#39;</span> <span class="kr">then</span>
+</span></span><span class="line"><span class="ln"> 8</span><span class="cl">    <span class="n">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+</span></span><span class="line"><span class="ln"> 9</span><span class="cl"><span class="c1">-- aがqwertyでもasdfghでもないとき</span>
+</span></span><span class="line"><span class="ln">10</span><span class="cl"><span class="kr">else</span>
+</span></span><span class="line"><span class="ln">11</span><span class="cl">    <span class="n">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+</span></span><span class="line"><span class="ln">12</span><span class="cl"><span class="kr">end</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="ln">1</span><span class="cl">qwerty
+</span></span></code></pre></div><h3 id="論理演算子">論理演算子</h3>
+<ul>
+<li><a href="https://www.lua.org/manual/5.4/manual.html#3.4.5">3.4.5 – Logical Operators</a></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"><strong>and</strong></th>
+<th style="text-align:center"><strong>論理積</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><strong>or</strong></td>
+<td style="text-align:center"><strong>論理和</strong></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>not</strong></td>
+<td style="text-align:center"><strong>論理否定</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="for">for</h3>
+<ul>
+<li><a href="https://www.lua.org/manual/5.4/manual.html#3.4.5">3.3.5 – For Statement</a></li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-lua" data-lang="lua"><span class="line"><span class="ln">1</span><span class="cl"><span class="cm">--[[
+</span></span></span><span class="line"><span class="ln">2</span><span class="cl"><span class="cm">for 初期値,最大値,増減
+</span></span></span><span class="line"><span class="ln">3</span><span class="cl"><span class="cm">--]]</span>
+</span></span><span class="line"><span class="ln">4</span><span class="cl"><span class="kr">for</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">1</span> <span class="kr">do</span>
+</span></span><span class="line"><span class="ln">5</span><span class="cl">    <span class="n">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+</span></span><span class="line"><span class="ln">6</span><span class="cl"><span class="kr">end</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="ln">1</span><span class="cl"><span class="m">1</span>
+</span></span><span class="line"><span class="ln">2</span><span class="cl"><span class="m">2</span>
+</span></span><span class="line"><span class="ln">3</span><span class="cl"><span class="m">3</span>
+</span></span></code></pre></div>
     </div>
 
 
@@ -213,10 +323,10 @@
     <br>
     <div class="PrevNextLink">
       
-      
-        <div class="NextLink">
-          <a href="https://ryuzu2048.github.io/post/2/">hugoserverコマンドメモ</a>
+        <div class="PrevLink">
+          <a href="https://ryuzu2048.github.io/post/5/">robots.txtについて</a>
         </div>
+      
       
     </div>
     <br>
