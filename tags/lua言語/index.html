@@ -4,12 +4,10 @@
   lang="ja"
   data-figures=""
   
-    class="page"
-  
   
   >
   <head>
-<title>【Google Chrome】キャッシュの消去とハード再読み込み | 睡眠負債</title>
+<title>Lua言語 | 睡眠負債</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -25,25 +23,25 @@
 
 
 
-  
 <meta property="og:locale" content="ja" />
 
 <meta property="og:type" content="article">
-<meta name="description" content="【Google Chrome】キャッシュの消去とハード再読み込み" />
+<meta name="description" content="" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:creator" content="@Ryuzu2048">
-<meta name="twitter:title" content="【Google Chrome】キャッシュの消去とハード再読み込み" />
+<meta name="twitter:title" content="Lua言語" />
 <meta name="twitter:image" content="https://ryuzu2048.github.io/images/thumbnail.png"/>
-<meta property="og:url" content="https://ryuzu2048.github.io/post/3/" />
-<meta property="og:title" content="【Google Chrome】キャッシュの消去とハード再読み込み" />
-<meta property="og:description" content="【Google Chrome】キャッシュの消去とハード再読み込み" />
+<meta property="og:url" content="https://ryuzu2048.github.io/tags/lua%E8%A8%80%E8%AA%9E/" />
+<meta property="og:title" content="Lua言語" />
+<meta property="og:description" content="" />
 <meta property="og:image" content="https://ryuzu2048.github.io/images/thumbnail.png" />
 
 <link rel="apple-touch-icon" sizes="180x180" href="https://ryuzu2048.github.io/icons/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://ryuzu2048.github.io/icons/favicon-32x32.png">
 <link rel="manifest" href="https://ryuzu2048.github.io/icons/site.webmanifest">
 
-<link rel="canonical" href="https://ryuzu2048.github.io/post/3/">
+<link rel="canonical" href="https://ryuzu2048.github.io/tags/lua%E8%A8%80%E8%AA%9E/">
+<link rel="alternate" type="application/rss+xml" href="https://ryuzu2048.github.io/tags/lua%E8%A8%80%E8%AA%9E/index.xml" title="睡眠負債" />
 
 
 
@@ -166,10 +164,19 @@
 </header>
 
     <main>
-  
+
+
+
 <div class="grid-inverse wrap content">
-  <article class="post_content">
-    <h1 class="post_title">【Google Chrome】キャッシュの消去とハード再読み込み</h1>
+  <div>
+    <ul class="posts" id="posts">
+        <li class="post_item">
+  <div class="excerpt">
+    <div class="excerpt_header">
+      <h3 class="post_link">
+        <a href="https://ryuzu2048.github.io/post/6/" title="【Lua言語】備忘録">【Lua言語】備忘録</a>
+      </h3>
+      
   <div class="post_meta">
     <span><svg class="icon">
   <title>calendar</title>
@@ -177,20 +184,22 @@
 </svg>
 </span>
     <span class="post_date">
-      <time itemprop="datePublished" datetime="2023-02-06 00:00:00 &#43;0000 UTC">
-        2023-02-06</time>
+      <time itemprop="datePublished" datetime="2023-02-09 00:00:00 &#43;0000 UTC">
+        2023-02-09</time>
     </span>
-    <span class="post_time"> · 1 分で読了</span>
+    <span class="post_time"> · 1 分で読了</span><span>&nbsp;· <a href='https://ryuzu2048.github.io/tags/lua%E8%A8%80%E8%AA%9E/' title="Lua言語" class="post_tag button button_translucent">Lua言語
+        </a>
+    </span>
     <span class="page_only">&nbsp;·
   <div class="post_share">
     共有する:
-    <a href="https://twitter.com/intent/tweet?text=%e3%80%90Google%20Chrome%e3%80%91%e3%82%ad%e3%83%a3%e3%83%83%e3%82%b7%e3%83%a5%e3%81%ae%e6%b6%88%e5%8e%bb%e3%81%a8%e3%83%8f%e3%83%bc%e3%83%89%e5%86%8d%e8%aa%ad%e3%81%bf%e8%be%bc%e3%81%bf&url=https%3a%2f%2fryuzu2048.github.io%2fpost%2f3%2f&tw_p=tweetbutton" class="twitter" title="共有する Twitter" target="_blank" rel="nofollow">
+    <a href="https://twitter.com/intent/tweet?text=%e3%80%90Lua%e8%a8%80%e8%aa%9e%e3%80%91%e5%82%99%e5%bf%98%e9%8c%b2&url=https%3a%2f%2fryuzu2048.github.io%2fpost%2f6%2f&tw_p=tweetbutton" class="twitter" title="共有する Twitter" target="_blank" rel="nofollow">
       <svg class="icon">
   <title>twitter</title>
   <use xlink:href="#twitter"></use>
 </svg>
 
-    <a href="https://ryuzu2048.github.io/post/3/" title="Copy Link" class="link link_yank">
+    <a href="https://ryuzu2048.github.io/post/6/" title="Copy Link" class="link link_yank">
       <svg class="icon">
   <title>copy</title>
   <use xlink:href="#copy"></use>
@@ -201,51 +210,23 @@
   </span>
   </div>
 
-    <div class="post_body"><p>特定のページだけキャッシュを消したい。</p>
-<h2 id="キャッシュの消去とハード再読み込み">キャッシュの消去とハード再読み込み</h2>
-<blockquote>
-<p>Empty Cache And Hard Reload forces the browser to go the network for all resources.<br>
--- <cite><a href="https://developer.chrome.com/docs/devtools/network/">Inspect network activity</a></cite></p>
-</blockquote>
-<h2 id="方法">方法</h2>
-<h3 id="1">1</h3>
-<p>デベロッパーツールを開く<br>
-<a href="https://developer.chrome.com/docs/devtools/open/">Open Chrome DevTools</a><br></p>
-<h3 id="2">2</h3>
-<p>リロードボタンを長押しした後に、<strong>キャッシュの消去とハード再読み込み</strong>を選択する。</p>
-
     </div>
-
-
-    
-    <br>
-    <br>
-    <br>
-    <div class="PrevNextLink">
-      
-        <div class="PrevLink">
-          <a href="https://ryuzu2048.github.io/post/2/">hugoserverコマンドメモ</a>
+      <div class="excerpt_footer">
+        <div class="pale">
+          
+            <p>【Lua言語】備忘録</p>
+          
+          <br>
+          <a href="https://ryuzu2048.github.io/post/6/" title="続きを読む" class="excerpt_more button">続きを読む</a>
         </div>
-      
-      
-        <div class="NextLink">
-          <a href="https://ryuzu2048.github.io/post/4/">【Go】timeの2006-01-02T15:04:05Zについて</a>
-        </div>
-      
+      </div>
     </div>
-    <br>
-    <br>
-    <br>
-<div class="post_comments">
-  
-  
-  
-</div>
+  </li>
 
-
-
-
-  </article>
+      <li>
+      </li>
+    </ul>
+  </div>
 <aside class="sidebar">
   <section class="sidebar_inner">
     <br>
@@ -319,8 +300,9 @@
   </section>
 </aside>
 
-  
 </div>
+
+
     </main><svg width="0" height="0" class="hidden">
   <symbol viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" id="facebook">
     <path d="M437 0H75C33.648 0 0 33.648 0 75v362c0 41.352 33.648 75 75 75h151V331h-60v-90h60v-61c0-49.629 40.371-90 90-90h91v90h-91v61h91l-15 90h-76v181h121c41.352 0 75-33.648 75-75V75c0-41.352-33.648-75-75-75zm0 0"></path>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>備忘録 on 睡眠負債</title>
+    <link>https://ryuzu2048.github.io/categories/%E5%82%99%E5%BF%98%E9%8C%B2/</link>
+    <description>Recent content in 備忘録 on 睡眠負債</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2023 Ryuzu2048</copyright>
+    <lastBuildDate>Thu, 09 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://ryuzu2048.github.io/categories/%E5%82%99%E5%BF%98%E9%8C%B2/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>【Lua言語】備忘録</title>
+      <link>https://ryuzu2048.github.io/post/6/</link>
+      <pubDate>Thu, 09 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://ryuzu2048.github.io/post/6/</guid>
+      <description>
+        
+          
+            【Lua言語】備忘録
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>hugoserverコマンドメモ</title>
+      <link>https://ryuzu2048.github.io/post/2/</link>
+      <pubDate>Sun, 05 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://ryuzu2048.github.io/post/2/</guid>
+      <description>
+        
+          
+            私が普段使っているhugo serverコマンドのメモ
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>
