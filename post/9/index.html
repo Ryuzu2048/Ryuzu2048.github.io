@@ -231,7 +231,7 @@
 </span></span></code></pre></div><ul>
 <li>別のコマンドラインを使用する。
 <ul>
-<li>特にcmdであれば以下のコマンドを打つだけでコマンドラインの文字コードを<strong>UTF-8</strong>に変更できる。</li>
+<li>特にcmdであれば以下のコマンドを打つことによりコマンドラインの文字コードを<strong>UTF-8</strong>に変更できる。</li>
 </ul>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd"><span class="line"><span class="ln">1</span><span class="cl">chcp 65001
 </span></span></code></pre></div><ul>
@@ -241,14 +241,14 @@
 </li>
 <li>PowerShellの文字コードを<strong>UTF-8</strong>に変更する。（ベータを含むので余りおすすめできない）
 <ol>
-<li>以下のコマンドを打つ</li>
+<li>以下のコマンドを打つ。<a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/about/about_character_encoding?view=powershell-7.3">about_Character_Encoding</a></li>
 </ol>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="ln">1</span><span class="cl">PS C:\&gt; $OutputEncoding.encodingName
 </span></span><span class="line"><span class="ln">2</span><span class="cl">US-ASCII
 </span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="ln">1</span><span class="cl">PS C:\&gt; $OutputEncoding = [System.Text.Encoding]::UTF8
 </span></span><span class="line"><span class="ln">2</span><span class="cl">PS C:\&gt; $OutputEncoding.encodingName
 </span></span><span class="line"><span class="ln">3</span><span class="cl">Unicode (UTF-8)
-</span></span></code></pre></div><ol start="2">
+</span></span></code></pre></div><ol>
 <li>コントロールパネル</li>
 <li>地域</li>
 <li>管理タブ</li>
