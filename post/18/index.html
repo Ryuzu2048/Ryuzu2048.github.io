@@ -9,7 +9,7 @@
   
   >
   <head>
-<title>2023年02月26日（日） | 睡眠負債</title>
+<title>【Windows】ブラウザからソフトを開く仕組み | 睡眠負債</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -29,21 +29,21 @@
 <meta property="og:locale" content="ja" />
 
 <meta property="og:type" content="article">
-<meta name="description" content="2023年02月26日（日）" />
+<meta name="description" content="【Windows】ブラウザからソフトを開く仕組み" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:creator" content="@Ryuzu2048">
-<meta name="twitter:title" content="2023年02月26日（日）" />
+<meta name="twitter:title" content="【Windows】ブラウザからソフトを開く仕組み" />
 <meta name="twitter:image" content="https://ryuzu2048.github.io/images/thumbnail.png"/>
-<meta property="og:url" content="https://ryuzu2048.github.io/daily/2023/02/20230226/" />
-<meta property="og:title" content="2023年02月26日（日）" />
-<meta property="og:description" content="2023年02月26日（日）" />
+<meta property="og:url" content="https://ryuzu2048.github.io/post/18/" />
+<meta property="og:title" content="【Windows】ブラウザからソフトを開く仕組み" />
+<meta property="og:description" content="【Windows】ブラウザからソフトを開く仕組み" />
 <meta property="og:image" content="https://ryuzu2048.github.io/images/thumbnail.png" />
 
 <link rel="apple-touch-icon" sizes="180x180" href="https://ryuzu2048.github.io/icons/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://ryuzu2048.github.io/icons/favicon-32x32.png">
 <link rel="manifest" href="https://ryuzu2048.github.io/icons/site.webmanifest">
 
-<link rel="canonical" href="https://ryuzu2048.github.io/daily/2023/02/20230226/">
+<link rel="canonical" href="https://ryuzu2048.github.io/post/18/">
 
 
 
@@ -169,7 +169,7 @@
   
 <div class="grid-inverse wrap content">
   <article class="post_content">
-    <h1 class="post_title">2023年02月26日（日）</h1>
+    <h1 class="post_title">【Windows】ブラウザからソフトを開く仕組み</h1>
   <div class="post_meta">
     <span><svg class="icon">
   <title>calendar</title>
@@ -177,20 +177,20 @@
 </svg>
 </span>
     <span class="post_date">
-      <time itemprop="datePublished" datetime="2023-02-26 00:00:00 &#43;0000 UTC">
-        2023-02-26</time>
+      <time itemprop="datePublished" datetime="2023-03-28 00:00:00 &#43;0000 UTC">
+        2023-03-28</time>
     </span>
     <span class="post_time"> · 1 分で読了</span>
     <span class="page_only">&nbsp;·
   <div class="post_share">
     共有する:
-    <a href="https://twitter.com/intent/tweet?text=2023%e5%b9%b402%e6%9c%8826%e6%97%a5%ef%bc%88%e6%97%a5%ef%bc%89&url=https%3a%2f%2fryuzu2048.github.io%2fdaily%2f2023%2f02%2f20230226%2f&tw_p=tweetbutton" class="twitter" title="共有する Twitter" target="_blank" rel="nofollow">
+    <a href="https://twitter.com/intent/tweet?text=%e3%80%90Windows%e3%80%91%e3%83%96%e3%83%a9%e3%82%a6%e3%82%b6%e3%81%8b%e3%82%89%e3%82%bd%e3%83%95%e3%83%88%e3%82%92%e9%96%8b%e3%81%8f%e4%bb%95%e7%b5%84%e3%81%bf&url=https%3a%2f%2fryuzu2048.github.io%2fpost%2f18%2f&tw_p=tweetbutton" class="twitter" title="共有する Twitter" target="_blank" rel="nofollow">
       <svg class="icon">
   <title>twitter</title>
   <use xlink:href="#twitter"></use>
 </svg>
 
-    <a href="https://ryuzu2048.github.io/daily/2023/02/20230226/" title="Copy Link" class="link link_yank">
+    <a href="https://ryuzu2048.github.io/post/18/" title="Copy Link" class="link link_yank">
       <svg class="icon">
   <title>copy</title>
   <use xlink:href="#copy"></use>
@@ -201,10 +201,37 @@
   </span>
   </div>
 
-    <div class="post_body"><h2 id="今日した作業">今日した作業</h2>
-<ul>
-<li><a href="../../../../post/13">『sfc /scannow』って何？</a></li>
-</ul>
+      <div class="post_toc">
+        <h2>目次</h2>
+        <nav id="TableOfContents">
+  <ol>
+    <li><a href="#ブラウザでソフトを開く">ブラウザでソフトを開く</a></li>
+    <li><a href="#なぜ開くのか">なぜ開くのか</a></li>
+    <li><a href="#http-や-ms-setting-のとは何か">http「:」// や ms-setting「:」// の「:」とは何か</a></li>
+  </ol>
+</nav>
+      </div>
+      <br>
+      <br>
+    
+    <div class="post_body"><h1 id="ブラウザでソフトを開く">ブラウザでソフトを開く</h1>
+<p>ブラウザ（<a href="https://www.google.com/intl/ja_jp/chrome/">Google Chrome</a>や<a href="https://www.microsoft.com/ja-jp/edge">Microsoft Edge</a>など）のアドレスバーで
+<code> ms-settings: </code>
+を打つと<strong>設定アプリ</strong>が開く<br>
+他にも
+<code> unityhub: </code>
+を打つと<strong>Unity Hub</strong>が開く（インストール済みの場合のみ）<br>
+このように特定の文字を入力することによりブラウザでソフトを開くことが出来る。</p>
+<h1 id="なぜ開くのか">なぜ開くのか</h1>
+<p>レジストリ エディターに設定が紐づけられている。<br></p>
+<h1 id="http-や-ms-setting-のとは何か">http「:」// や ms-setting「:」// の「:」とは何か</h1>
+<p><a href="https://datatracker.ietf.org/doc/rfc7595/">Guidelines and Registration Procedures for URI Schemes</a>より定められている。<br></p>
+<blockquote>
+<p>URI = scheme &quot;:&quot; hier-part [ &quot;?&quot; query ] [ &quot;#&quot; fragment ]</p>
+</blockquote>
+<p>を</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="ln">1</span><span class="cl">https://example.com/
+</span></span></code></pre></div><p>で考えると<strong>https</strong>が<strong>scheme</strong>であり <strong>:</strong> で区切られる。<br></p>
 
     </div>
 
@@ -216,13 +243,9 @@
     <div class="PrevNextLink">
       
         <div class="PrevLink">
-          <a href="https://ryuzu2048.github.io/daily/2023/02/20230225/" target="_blank" rel="noopener">2023年02月25日（土）</a>
+          <a href="https://ryuzu2048.github.io/post/17/" target="_blank" rel="noopener">Unity Hubに無いエディターのバージョンをインストールする</a>
         </div>
       
-      
-        <div class="NextLink">
-          <a href="https://ryuzu2048.github.io/daily/2023/02/20230227/" target="_blank" rel="noopener">2023年02月27日（月）</a>
-        </div>
       
     </div>
     <br>
