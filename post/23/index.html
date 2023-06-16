@@ -4,10 +4,12 @@
   lang="ja"
   data-figures=""
   
+    class="page"
+  
   
   >
   <head>
-<title>シリーズ | 睡眠負債</title>
+<title>Ubuntu 22.04 &#43; Nginx &#43; CloudflareでLet&#39;s Encryptのワイルドカード証明書を取得した時の備忘録 | 睡眠負債</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -23,25 +25,25 @@
 
 
 
+  
 <meta property="og:locale" content="ja" />
 
 <meta property="og:type" content="article">
-<meta name="description" content="" />
+<meta name="description" content="Ubuntu 22.04 &#43; Nginx &#43; CloudflareでLet&#39;s Encryptのワイルドカード証明書を取得した時の備忘録" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:creator" content="@Ryuzu2048">
-<meta name="twitter:title" content="Series" />
+<meta name="twitter:title" content="Ubuntu 22.04 &#43; Nginx &#43; CloudflareでLet&#39;s Encryptのワイルドカード証明書を取得した時の備忘録" />
 <meta name="twitter:image" content="https://ryuzu2048.github.io/images/thumbnail.png"/>
-<meta property="og:url" content="https://ryuzu2048.github.io/series/" />
-<meta property="og:title" content="Series" />
-<meta property="og:description" content="" />
+<meta property="og:url" content="https://ryuzu2048.github.io/post/23/" />
+<meta property="og:title" content="Ubuntu 22.04 &#43; Nginx &#43; CloudflareでLet&#39;s Encryptのワイルドカード証明書を取得した時の備忘録" />
+<meta property="og:description" content="Ubuntu 22.04 &#43; Nginx &#43; CloudflareでLet&#39;s Encryptのワイルドカード証明書を取得した時の備忘録" />
 <meta property="og:image" content="https://ryuzu2048.github.io/images/thumbnail.png" />
 
 <link rel="apple-touch-icon" sizes="180x180" href="https://ryuzu2048.github.io/icons/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://ryuzu2048.github.io/icons/favicon-32x32.png">
 <link rel="manifest" href="https://ryuzu2048.github.io/icons/site.webmanifest">
 
-<link rel="canonical" href="https://ryuzu2048.github.io/series/">
-<link rel="alternate" type="application/rss+xml" href="https://ryuzu2048.github.io/series/index.xml" title="睡眠負債" />
+<link rel="canonical" href="https://ryuzu2048.github.io/post/23/">
 
 
 
@@ -158,16 +160,215 @@
 </header>
 
     <main>
-
-
-
+  
 <div class="grid-inverse wrap content">
-  <div>
-    <ul class="posts" id="posts">
-      <li>
-      </li>
-    </ul>
+  <article class="post_content">
+    <h1 class="post_title">Ubuntu 22.04 + Nginx + CloudflareでLet's Encryptのワイルドカード証明書を取得した時の備忘録</h1>
+  <div class="post_meta">
+    <span><svg class="icon">
+  <title>calendar</title>
+  <use xlink:href="#calendar"></use>
+</svg>
+</span>
+    <span class="post_date">
+      <time itemprop="datePublished" datetime="2023-06-16 00:00:00 &#43;0000 UTC">
+        2023-06-16</time>
+    </span>
+    <span class="post_time"> · 2 分で読了</span>
+    <span class="page_only">&nbsp;·
+  <div class="post_share">
+    共有する:
+    <a href="https://twitter.com/intent/tweet?text=Ubuntu%2022.04%20%2b%20Nginx%20%2b%20Cloudflare%e3%81%a7Let%27s%20Encrypt%e3%81%ae%e3%83%af%e3%82%a4%e3%83%ab%e3%83%89%e3%82%ab%e3%83%bc%e3%83%89%e8%a8%bc%e6%98%8e%e6%9b%b8%e3%82%92%e5%8f%96%e5%be%97%e3%81%97%e3%81%9f%e6%99%82%e3%81%ae%e5%82%99%e5%bf%98%e9%8c%b2&url=https%3a%2f%2fryuzu2048.github.io%2fpost%2f23%2f&tw_p=tweetbutton" class="twitter" title="共有する Twitter" target="_blank" rel="nofollow">
+      <svg class="icon">
+  <title>twitter</title>
+  <use xlink:href="#twitter"></use>
+</svg>
+
+    <a href="https://ryuzu2048.github.io/post/23/" title="Copy Link" class="link link_yank">
+      <svg class="icon">
+  <title>copy</title>
+  <use xlink:href="#copy"></use>
+</svg>
+
+    </a>
   </div>
+  </span>
+  </div>
+
+      <div class="post_toc">
+        <h2>目次</h2>
+        <nav id="TableOfContents">
+  <ol>
+    <li><a href="#前提条件">前提条件</a></li>
+    <li><a href="#方法">方法</a>
+      <ol>
+        <li><a href="#パッケージ更新">パッケージ更新</a></li>
+        <li><a href="#snapd">snapd</a>
+          <ol>
+            <li><a href="#インストールをしていない場合">インストールをしていない場合</a></li>
+            <li><a href="#インストールをしている場合">インストールをしている場合</a></li>
+          </ol>
+        </li>
+        <li><a href="#certbotのインストール">Certbotのインストール</a></li>
+        <li><a href="#シンボリックリンクの作成">シンボリックリンクの作成</a></li>
+        <li><a href="#certbotのsnapパッケージの設定を変更する">certbotのsnapパッケージの設定を変更する</a></li>
+        <li><a href="#dnsプラグインをインストールする">DNSプラグインをインストールする。</a></li>
+        <li><a href="#cloudflareのapi-トークン発行">CloudflareのAPI トークン発行</a></li>
+        <li><a href="#トークンの保管場所と記述">トークンの保管場所と記述</a>
+          <ol>
+            <li><a href="#フォルダ作成">フォルダ作成</a></li>
+            <li><a href="#ファイル作成">ファイル作成</a></li>
+            <li><a href="#secretscertbotcloudflareiniに以下の内容を書く">~/.secrets/certbot/cloudflare.iniに以下の内容を書く</a></li>
+            <li><a href="#権限変更">権限変更</a></li>
+          </ol>
+        </li>
+        <li><a href="#certbotを用いてワイルド証明書を取得する">Certbotを用いてワイルド証明書を取得する</a></li>
+        <li><a href="#nginxのコンフィグに証明書を書く">Nginxのコンフィグに証明書を書く</a></li>
+        <li><a href="#参考">参考</a></li>
+      </ol>
+    </li>
+  </ol>
+</nav>
+      </div>
+      <br>
+      <br>
+    
+    <div class="post_body"><h1 id="前提条件">前提条件</h1>
+<ul>
+<li>Ubuntu22.04</li>
+<li>Nginxインストール済み</li>
+<li>ドメイン取得済み</li>
+<li>ネームサーバー
+<ul>
+<li>NSレコードにCloudflareを登録済み</li>
+</ul>
+</li>
+</ul>
+<h1 id="方法">方法</h1>
+<h2 id="パッケージ更新">パッケージ更新</h2>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="ln">1</span><span class="cl">$ sudo apt update
+</span></span><span class="line"><span class="ln">2</span><span class="cl">$ sudo apt upgrade
+</span></span></code></pre></div><h2 id="snapd">snapd</h2>
+<h3 id="インストールをしていない場合">インストールをしていない場合</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="ln">1</span><span class="cl">$ sudo apt install snapd
+</span></span></code></pre></div><h3 id="インストールをしている場合">インストールをしている場合</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="ln">1</span><span class="cl">$ sudo snap install core
+</span></span><span class="line"><span class="ln">2</span><span class="cl">$ sudo snap refresh core
+</span></span></code></pre></div><h2 id="certbotのインストール">Certbotのインストール</h2>
+<p>ここからCertbotをインストールする。<br>
+過去にsnapd以外（aptやdnfなど）からインストールした場合は、削除しなればならない<br>
+以降は、削除した前提で書く。<br></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="ln">1</span><span class="cl">$ sudo snap install --classic certbot
+</span></span></code></pre></div><h2 id="シンボリックリンクの作成">シンボリックリンクの作成</h2>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="ln">1</span><span class="cl">$ sudo ln -s /snap/bin/certbot /usr/bin/certbot
+</span></span></code></pre></div><h2 id="certbotのsnapパッケージの設定を変更する">certbotのsnapパッケージの設定を変更する</h2>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="ln">1</span><span class="cl">$ sudo snap <span class="nb">set</span> certbot trust-plugin-with-root<span class="o">=</span>ok
+</span></span></code></pre></div><h2 id="dnsプラグインをインストールする">DNSプラグインをインストールする。</h2>
+<p>ここのDNSプラグインはCloudflareを使用する。<br></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="ln">1</span><span class="cl">$ sudo snap install certbot-dns-cloudflare
+</span></span></code></pre></div><h2 id="cloudflareのapi-トークン発行">CloudflareのAPI トークン発行</h2>
+<ol>
+<li><a href="https://dash.cloudflare.com/profile/api-tokens">API トークン</a>に移動</li>
+<li>トークンを作成する</li>
+<li>カスタム トークンを作成する</li>
+<li>トークン名は、適当に命名</li>
+<li>アクセス許可
+<ol>
+<li>ゾーン</li>
+<li>DNS</li>
+<li>編集</li>
+</ol>
+</li>
+<li>ゾーン リソース
+<ol>
+<li>包含</li>
+<li>特定のゾーン</li>
+<li>指定のドメインを選択する。</li>
+</ol>
+</li>
+<li>発行する。</li>
+</ol>
+<h2 id="トークンの保管場所と記述">トークンの保管場所と記述</h2>
+<h3 id="フォルダ作成">フォルダ作成</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="ln">1</span><span class="cl">$ mkdir -p ~/.secrets/certbot/
+</span></span></code></pre></div><h3 id="ファイル作成">ファイル作成</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="ln">1</span><span class="cl">$ nano ~/.secrets/certbot/cloudflare.ini
+</span></span></code></pre></div><h3 id="secretscertbotcloudflareiniに以下の内容を書く">~/.secrets/certbot/cloudflare.iniに以下の内容を書く</h3>
+<p><strong>Cloudflareで登録済みのトークン</strong>のみ書き換えること</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-ini" data-lang="ini"><span class="line"><span class="ln">1</span><span class="cl"><span class="na">dns_cloudflare_api_token</span> <span class="o">=</span> <span class="s">Cloudflareで登録済みのトークン</span>
+</span></span></code></pre></div><h3 id="権限変更">権限変更</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="ln">1</span><span class="cl">$ chmod <span class="m">700</span> ~/.secrets/
+</span></span><span class="line"><span class="ln">2</span><span class="cl">$ chmod <span class="m">700</span> ~/.secrets/certbot/
+</span></span><span class="line"><span class="ln">3</span><span class="cl">$ chmod <span class="m">600</span> ~/.secrets/certbot/cloudflare.ini
+</span></span></code></pre></div><h2 id="certbotを用いてワイルド証明書を取得する">Certbotを用いてワイルド証明書を取得する</h2>
+<p>ドメイン名を書き換える<br>
+以下のコマンドを実行すると対話式で質問されるので答える。<br></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="ln">1</span><span class="cl">$ sudo certbot certonly <span class="se">\
+</span></span></span><span class="line"><span class="ln">2</span><span class="cl"><span class="se"></span>    --dns-cloudflare <span class="se">\
+</span></span></span><span class="line"><span class="ln">3</span><span class="cl"><span class="se"></span>    --dns-cloudflare-credentials ~/.secrets/certbot/cloudflare.ini <span class="se">\
+</span></span></span><span class="line"><span class="ln">4</span><span class="cl"><span class="se"></span>    --dns-cloudflare-propagation-seconds <span class="m">60</span> <span class="se">\
+</span></span></span><span class="line"><span class="ln">5</span><span class="cl"><span class="se"></span>    -d ドメイン名 <span class="se">\
+</span></span></span><span class="line"><span class="ln">6</span><span class="cl"><span class="se"></span>    -d *.ドメイン名
+</span></span></code></pre></div><p>以下の<strong>Certificate is saved at</strong>と<strong>Key is saved at</strong>の場所は必ずメモすること。<br>
+<strong>This certificate expires on</strong>の日付も覚えておくことを強くお勧めする<br></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-txt" data-lang="txt"><span class="line"><span class="ln">1</span><span class="cl">.
+</span></span><span class="line"><span class="ln">2</span><span class="cl">.
+</span></span><span class="line"><span class="ln">3</span><span class="cl">.
+</span></span><span class="line"><span class="ln">4</span><span class="cl">Successfully received certificate.
+</span></span><span class="line"><span class="ln">5</span><span class="cl">Certificate is saved at: /etc/letsencrypt/live/ドメイン名/fullchain.pem
+</span></span><span class="line"><span class="ln">6</span><span class="cl">Key is saved at:         /etc/letsencrypt/live/ドメイン名/privkey.pem
+</span></span><span class="line"><span class="ln">7</span><span class="cl">This certificate expires on 2023-12-01.
+</span></span></code></pre></div><h2 id="nginxのコンフィグに証明書を書く">Nginxのコンフィグに証明書を書く</h2>
+<p>コンフィグを開いて適当に書く。<br>
+書く内容は各自変わるはずだ<br>
+但し、コンフィグの場所や名前は変わる恐れがあるので事前に確認すること。<br></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="ln">1</span><span class="cl">$ sudo nano /etc/nginx/conf.d/default.conf
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="ln">1</span><span class="cl">server {
+</span></span><span class="line"><span class="ln">2</span><span class="cl">    listen              443 ssl;
+</span></span><span class="line"><span class="ln">3</span><span class="cl">    server_name         ドメイン名;
+</span></span><span class="line"><span class="ln">4</span><span class="cl">    ssl_certificate     /etc/letsencrypt/live/ドメイン名/fullchain.pem;
+</span></span><span class="line"><span class="ln">5</span><span class="cl">    ssl_certificate_key /etc/letsencrypt/live/ドメイン名/privkey.pem;
+</span></span><span class="line"><span class="ln">6</span><span class="cl">    ...
+</span></span><span class="line"><span class="ln">7</span><span class="cl">}
+</span></span></code></pre></div><p>書き終えたら次のコマンドで構成ファイルをテストする<br></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="ln">1</span><span class="cl">$ sudo nginx -t
+</span></span></code></pre></div><h2 id="参考">参考</h2>
+<ul>
+<li><a href="https://snapcraft.io/docs/installing-snap-on-ubuntu">Installing snap on Ubuntu</a></li>
+<li><a href="https://certbot.eff.org/instructions?ws=nginx&amp;os=ubuntufocal&amp;tab=wildcard">My HTTP website is running Nginx on Ubuntu 20</a></li>
+<li><a href="https://certbot-dns-cloudflare.readthedocs.io/en/stable/">Welcome to certbot-dns-cloudflare’s documentation!</a></li>
+<li><a href="http://nginx.org/en/docs/http/configuring_https_servers.html">Configuring HTTPS servers</a></li>
+<li><a href="http://nginx.org/en/docs/switches.html">Command-line parameters</a></li>
+</ul>
+
+    </div>
+
+
+    
+    <br>
+    <br>
+    <br>
+    <div class="PrevNextLink">
+      
+        <div class="PrevLink">
+          <a href="https://ryuzu2048.github.io/post/22/" target="_blank" rel="noopener">YAMLでTabを使用し何度も失敗した話</a>
+        </div>
+      
+      
+    </div>
+    <br>
+    <br>
+    <br>
+<div class="post_comments">
+  
+  
+  
+</div>
+
+
+
+
+  </article>
 <aside class="sidebar">
   <section class="sidebar_inner">
     <br>
@@ -251,9 +452,8 @@
   </section>
 </aside>
 
+  
 </div>
-
-
     </main><svg width="0" height="0" class="hidden">
   <symbol viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" id="facebook">
     <path d="M437 0H75C33.648 0 0 33.648 0 75v362c0 41.352 33.648 75 75 75h151V331h-60v-90h60v-61c0-49.629 40.371-90 90-90h91v90h-91v61h91l-15 90h-76v181h121c41.352 0 75-33.648 75-75V75c0-41.352-33.648-75-75-75zm0 0"></path>

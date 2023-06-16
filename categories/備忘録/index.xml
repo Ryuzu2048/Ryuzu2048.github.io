@@ -6,7 +6,23 @@
     <description>Recent content in 備忘録 on 睡眠負債</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright © 2023 Ryuzu2048</copyright>
-    <lastBuildDate>Mon, 27 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://ryuzu2048.github.io/categories/%E5%82%99%E5%BF%98%E9%8C%B2/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 16 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://ryuzu2048.github.io/categories/%E5%82%99%E5%BF%98%E9%8C%B2/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ubuntu 22.04 &#43; Nginx &#43; CloudflareでLet&#39;s Encryptのワイルドカード証明書を取得した時の備忘録</title>
+      <link>https://ryuzu2048.github.io/post/23/</link>
+      <pubDate>Fri, 16 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://ryuzu2048.github.io/post/23/</guid>
+      <description>
+        
+          
+            Ubuntu 22.04 + Nginx + CloudflareでLet&#39;s Encryptのワイルドカード証明書を取得した時の備忘録
+          
+          
+        
+      </description>
+    </item>
+    
     <item>
       <title>【Misskey】備忘録</title>
       <link>https://ryuzu2048.github.io/post/14/</link>
