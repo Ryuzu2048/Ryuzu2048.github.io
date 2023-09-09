@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Misskey on 睡眠負債</title>
-        <link>/categories/misskey/</link>
+        <link>https://ryuzu2048.github.io/categories/misskey/</link>
         <description>Recent content in Misskey on 睡眠負債</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
         <copyright>Ryuzu2048</copyright>
-        <lastBuildDate>Mon, 27 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="/categories/misskey/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Mon, 27 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://ryuzu2048.github.io/categories/misskey/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>【Misskey】備忘録</title>
-        <link>/post/14/</link>
+        <link>https://ryuzu2048.github.io/post/14/</link>
         <pubDate>Mon, 27 Feb 2023 00:00:00 +0000</pubDate>
         
-        <guid>/post/14/</guid>
+        <guid>https://ryuzu2048.github.io/post/14/</guid>
         <description>&lt;h1 id=&#34;misskeyとは&#34;&gt;Misskeyとは&lt;/h1&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Misskeyは分散型プラットフォーム&lt;/p&gt;

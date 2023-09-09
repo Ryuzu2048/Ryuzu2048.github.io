@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>睡眠負債</title>
-        <link>/</link>
+        <link>https://ryuzu2048.github.io/</link>
         <description>Recent content on 睡眠負債</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
         <copyright>Ryuzu2048</copyright>
-        <lastBuildDate>Fri, 16 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Fri, 16 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://ryuzu2048.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Ubuntu 22.04 &#43; Nginx &#43; CloudflareでLet&#39;s Encryptのワイルドカード証明書を取得した時の備忘録</title>
-        <link>/post/23/</link>
+        <link>https://ryuzu2048.github.io/post/23/</link>
         <pubDate>Fri, 16 Jun 2023 00:00:00 +0000</pubDate>
         
-        <guid>/post/23/</guid>
+        <guid>https://ryuzu2048.github.io/post/23/</guid>
         <description>&lt;h1 id=&#34;前提条件&#34;&gt;前提条件&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;Ubuntu22.04&lt;/li&gt;
@@ -263,10 +263,10 @@
         </item>
         <item>
         <title>YAMLでTabを使用し何度も失敗した話</title>
-        <link>/post/22/</link>
+        <link>https://ryuzu2048.github.io/post/22/</link>
         <pubDate>Fri, 28 Apr 2023 00:00:00 +0000</pubDate>
         
-        <guid>/post/22/</guid>
+        <guid>https://ryuzu2048.github.io/post/22/</guid>
         <description>&lt;h1 id=&#34;what-it-yaml&#34;&gt;What It YAML&lt;/h1&gt;
 &lt;blockquote&gt;
 &lt;p&gt;YAML is a human-friendly data serialization
@@ -312,10 +312,10 @@ language for all programming languages.
         </item>
         <item>
         <title>Adobe Acrobat Readerで無料の機能を用いてPDFに文字を追記する</title>
-        <link>/post/21/</link>
+        <link>https://ryuzu2048.github.io/post/21/</link>
         <pubDate>Fri, 21 Apr 2023 00:00:00 +0000</pubDate>
         
-        <guid>/post/21/</guid>
+        <guid>https://ryuzu2048.github.io/post/21/</guid>
         <description>&lt;h1 id=&#34;有料adobe-acrobat-readerでpdfを編集をする&#34;&gt;【有料】Adobe Acrobat ReaderでPDFを編集をする。&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://helpx.adobe.com/jp/acrobat/how-to/edit-text-images-pdf-files.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -355,10 +355,10 @@ language for all programming languages.
         </item>
         <item>
         <title>【Chrome Remote Desktop】SSH 経由でセットアップする</title>
-        <link>/post/20/</link>
+        <link>https://ryuzu2048.github.io/post/20/</link>
         <pubDate>Tue, 18 Apr 2023 00:00:00 +0000</pubDate>
         
-        <guid>/post/20/</guid>
+        <guid>https://ryuzu2048.github.io/post/20/</guid>
         <description>&lt;h1 id=&#34;google-remote-desktopサイトアクセス方法&#34;&gt;Google Remote Desktopサイトアクセス方法&lt;/h1&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://remotedesktop.google.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -387,10 +387,10 @@ language for all programming languages.
         </item>
         <item>
         <title>Twitter Recommendation Algorithmが公開された話</title>
-        <link>/post/19/</link>
+        <link>https://ryuzu2048.github.io/post/19/</link>
         <pubDate>Tue, 04 Apr 2023 00:00:00 +0000</pubDate>
         
-        <guid>/post/19/</guid>
+        <guid>https://ryuzu2048.github.io/post/19/</guid>
         <description>&lt;h1 id=&#34;twitter-recommendation-algorithmが公開された&#34;&gt;Twitter Recommendation Algorithmが公開された&lt;/h1&gt;
 &lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/twitter/the-algorithm/main/docs/system-diagram.png&#34;
 	
@@ -419,10 +419,10 @@ language for all programming languages.
         </item>
         <item>
         <title>【Windows】ブラウザからソフトを開く仕組み</title>
-        <link>/post/18/</link>
+        <link>https://ryuzu2048.github.io/post/18/</link>
         <pubDate>Tue, 28 Mar 2023 00:00:00 +0000</pubDate>
         
-        <guid>/post/18/</guid>
+        <guid>https://ryuzu2048.github.io/post/18/</guid>
         <description>&lt;h1 id=&#34;ブラウザでソフトを開く&#34;&gt;ブラウザでソフトを開く&lt;/h1&gt;
 &lt;p&gt;ブラウザ（&lt;a class=&#34;link&#34; href=&#34;https://www.google.com/intl/ja_jp/chrome/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Google Chrome&lt;/a&gt;や&lt;a class=&#34;link&#34; href=&#34;https://www.microsoft.com/ja-jp/edge&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -455,10 +455,10 @@ language for all programming languages.
         </item>
         <item>
         <title>Unity Hubに無いエディターのバージョンをインストールする</title>
-        <link>/post/17/</link>
+        <link>https://ryuzu2048.github.io/post/17/</link>
         <pubDate>Tue, 21 Mar 2023 00:00:00 +0000</pubDate>
         
-        <guid>/post/17/</guid>
+        <guid>https://ryuzu2048.github.io/post/17/</guid>
         <description>&lt;h1 id=&#34;unity-hubとは&#34;&gt;Unity Hubとは&lt;/h1&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Unity Hub を使用すると、Unity エディターの複数のインストールを管理し、新しいプロジェクトを作成し、作業対象にアクセスできます。&lt;/p&gt;
@@ -491,10 +491,10 @@ language for all programming languages.
         </item>
         <item>
         <title>GNU screenコマンド</title>
-        <link>/post/16/</link>
+        <link>https://ryuzu2048.github.io/post/16/</link>
         <pubDate>Mon, 13 Mar 2023 00:00:00 +0000</pubDate>
         
-        <guid>/post/16/</guid>
+        <guid>https://ryuzu2048.github.io/post/16/</guid>
         <description>&lt;p&gt;screenコマンドについて&lt;/p&gt;
 &lt;h1 id=&#34;出来ること&#34;&gt;出来ること&lt;/h1&gt;
 &lt;p&gt;物理端末を多重化することができる。&lt;/p&gt;
@@ -584,10 +584,10 @@ language for all programming languages.
         </item>
         <item>
         <title>『chkdsk』って何？</title>
-        <link>/post/15/</link>
+        <link>https://ryuzu2048.github.io/post/15/</link>
         <pubDate>Sat, 04 Mar 2023 00:00:00 +0000</pubDate>
         
-        <guid>/post/15/</guid>
+        <guid>https://ryuzu2048.github.io/post/15/</guid>
         <description>&lt;p&gt;使う必要が出てきたのでコマンド『chkdsk』について調べる。&lt;/p&gt;
 &lt;h1 id=&#34;説明&#34;&gt;説明&lt;/h1&gt;
 &lt;blockquote&gt;
@@ -775,10 +775,10 @@ language for all programming languages.
         </item>
         <item>
         <title>【Misskey】備忘録</title>
-        <link>/post/14/</link>
+        <link>https://ryuzu2048.github.io/post/14/</link>
         <pubDate>Mon, 27 Feb 2023 00:00:00 +0000</pubDate>
         
-        <guid>/post/14/</guid>
+        <guid>https://ryuzu2048.github.io/post/14/</guid>
         <description>&lt;h1 id=&#34;misskeyとは&#34;&gt;Misskeyとは&lt;/h1&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Misskeyは分散型プラットフォーム&lt;/p&gt;
@@ -848,10 +848,10 @@ language for all programming languages.
         </item>
         <item>
         <title>『sfc /scannow』って何？</title>
-        <link>/post/13/</link>
+        <link>https://ryuzu2048.github.io/post/13/</link>
         <pubDate>Sun, 26 Feb 2023 00:00:00 +0000</pubDate>
         
-        <guid>/post/13/</guid>
+        <guid>https://ryuzu2048.github.io/post/13/</guid>
         <description>&lt;p&gt;なんとなく使用しているコマンド『sfc /scannow』について調べなおす。&lt;/p&gt;
 &lt;h1 id=&#34;説明&#34;&gt;説明&lt;/h1&gt;
 &lt;blockquote&gt;
@@ -952,10 +952,10 @@ language for all programming languages.
         </item>
         <item>
         <title>【Windows 11】回復ドライブ作成方法</title>
-        <link>/post/12/</link>
+        <link>https://ryuzu2048.github.io/post/12/</link>
         <pubDate>Fri, 24 Feb 2023 00:00:00 +0000</pubDate>
         
-        <guid>/post/12/</guid>
+        <guid>https://ryuzu2048.github.io/post/12/</guid>
         <description>&lt;h1 id=&#34;回復ドライブとは&#34;&gt;回復ドライブとは&lt;/h1&gt;
 &lt;blockquote&gt;
 &lt;p&gt;PC でハードウェア障害などの大きな問題が発生した場合は、回復ドライブを使用して Windows 11 を再インストールできます。&lt;br&gt;
@@ -986,10 +986,10 @@ language for all programming languages.
         </item>
         <item>
         <title>【GAS】Google Apps Scriptの始め方</title>
-        <link>/post/11/</link>
+        <link>https://ryuzu2048.github.io/post/11/</link>
         <pubDate>Wed, 22 Feb 2023 00:00:00 +0000</pubDate>
         
-        <guid>/post/11/</guid>
+        <guid>https://ryuzu2048.github.io/post/11/</guid>
         <description>&lt;h1 id=&#34;google-apps-scriptの公式ページ&#34;&gt;Google Apps Scriptの公式ページ&lt;/h1&gt;
 &lt;p&gt;日本語があるが日本語は、&lt;a class=&#34;link&#34; href=&#34;https://cloud.google.com/translate/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Cloud Translation API&lt;/a&gt;を用いて翻訳されている。&lt;/p&gt;
@@ -1082,10 +1082,10 @@ language for all programming languages.
         </item>
         <item>
         <title>【GAS】Discord Webhookでフォーラムに新しい投稿をする方法</title>
-        <link>/post/10/</link>
+        <link>https://ryuzu2048.github.io/post/10/</link>
         <pubDate>Sat, 18 Feb 2023 00:00:00 +0000</pubDate>
         
-        <guid>/post/10/</guid>
+        <guid>https://ryuzu2048.github.io/post/10/</guid>
         <description>&lt;h1 id=&#34;discordフォーラムとは&#34;&gt;Discordフォーラムとは&lt;/h1&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://support.discord.com/hc/ja/articles/6208479917079-%E3%83%95%E3%82%A9%E3%83%BC%E3%83%A9%E3%83%A0%E3%83%81%E3%83%A3%E3%83%B3%E3%83%8D%E3%83%AB&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;フォーラムチャンネル&lt;/a&gt;&lt;/p&gt;
@@ -1133,10 +1133,10 @@ language for all programming languages.
         </item>
         <item>
         <title>VS Code &#43; PowerShell &#43; gcc &#43; 日本語 = 文字化けする問題</title>
-        <link>/post/9/</link>
+        <link>https://ryuzu2048.github.io/post/9/</link>
         <pubDate>Mon, 13 Feb 2023 00:00:00 +0000</pubDate>
         
-        <guid>/post/9/</guid>
+        <guid>https://ryuzu2048.github.io/post/9/</guid>
         <description>&lt;h1 id=&#34;なんか文字化けした&#34;&gt;なんか文字化けした&lt;/h1&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -1254,10 +1254,10 @@ language for all programming languages.
         </item>
         <item>
         <title>【C言語】if文・for文・while文・無限ループ・配列・関数</title>
-        <link>/post/8/</link>
+        <link>https://ryuzu2048.github.io/post/8/</link>
         <pubDate>Sun, 12 Feb 2023 00:00:00 +0000</pubDate>
         
-        <guid>/post/8/</guid>
+        <guid>https://ryuzu2048.github.io/post/8/</guid>
         <description>&lt;h1 id=&#34;if文&#34;&gt;if文&lt;/h1&gt;
 &lt;h2 id=&#34;使い方&#34;&gt;使い方&lt;/h2&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -1673,10 +1673,10 @@ language for all programming languages.
         </item>
         <item>
         <title>SwitchBot プラグミニの電力をGrafana Cloudで監視画面を作る</title>
-        <link>/post/7/</link>
+        <link>https://ryuzu2048.github.io/post/7/</link>
         <pubDate>Sat, 11 Feb 2023 00:00:00 +0000</pubDate>
         
-        <guid>/post/7/</guid>
+        <guid>https://ryuzu2048.github.io/post/7/</guid>
         <description>&lt;h1 id=&#34;方針&#34;&gt;方針&lt;/h1&gt;
 &lt;ol&gt;
 &lt;li&gt;Raspberry Pi 4（以下「RPi4」という。）を使用してBluetooth Low Energy（以下「BLE」という。）を用いてSwitchBot プラグミニの電力を取得。&lt;/li&gt;
@@ -1755,10 +1755,10 @@ language for all programming languages.
         </item>
         <item>
         <title>【Lua言語】備忘録</title>
-        <link>/post/6/</link>
+        <link>https://ryuzu2048.github.io/post/6/</link>
         <pubDate>Thu, 09 Feb 2023 00:00:00 +0000</pubDate>
         
-        <guid>/post/6/</guid>
+        <guid>https://ryuzu2048.github.io/post/6/</guid>
         <description>&lt;h1 id=&#34;公式ページ&#34;&gt;公式ページ&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://lua.org&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -1945,10 +1945,10 @@ language for all programming languages.
         </item>
         <item>
         <title>robots.txtについて</title>
-        <link>/post/5/</link>
+        <link>https://ryuzu2048.github.io/post/5/</link>
         <pubDate>Wed, 08 Feb 2023 00:00:00 +0000</pubDate>
         
-        <guid>/post/5/</guid>
+        <guid>https://ryuzu2048.github.io/post/5/</guid>
         <description>&lt;h1 id=&#34;robotstxtとは&#34;&gt;robots.txtとは&lt;/h1&gt;
 &lt;p&gt;クローラに対してファイルへのアクセス許可・不許可を示すもの。&lt;/p&gt;
 &lt;p&gt;Robots Exclusion Protocol（REP）という規格で定められている。&lt;/p&gt;
@@ -1976,10 +1976,10 @@ language for all programming languages.
         </item>
         <item>
         <title>【Go】timeの2006-01-02T15:04:05Zについて</title>
-        <link>/post/4/</link>
+        <link>https://ryuzu2048.github.io/post/4/</link>
         <pubDate>Tue, 07 Feb 2023 00:00:00 +0000</pubDate>
         
-        <guid>/post/4/</guid>
+        <guid>https://ryuzu2048.github.io/post/4/</guid>
         <description>&lt;h1 id=&#34;結論&#34;&gt;結論&lt;/h1&gt;
 &lt;blockquote&gt;
 &lt;p&gt;2006-01-02T15:04:05Z&lt;br&gt;
@@ -1999,10 +1999,10 @@ language for all programming languages.
         </item>
         <item>
         <title>【Google Chrome】キャッシュの消去とハード再読み込み</title>
-        <link>/post/3/</link>
+        <link>https://ryuzu2048.github.io/post/3/</link>
         <pubDate>Mon, 06 Feb 2023 00:00:00 +0000</pubDate>
         
-        <guid>/post/3/</guid>
+        <guid>https://ryuzu2048.github.io/post/3/</guid>
         <description>&lt;p&gt;特定のページだけキャッシュを消したい。&lt;/p&gt;
 &lt;h1 id=&#34;キャッシュの消去とハード再読み込み&#34;&gt;キャッシュの消去とハード再読み込み&lt;/h1&gt;
 &lt;blockquote&gt;
@@ -2025,10 +2025,10 @@ language for all programming languages.
         </item>
         <item>
         <title>About Me</title>
-        <link>/about/</link>
+        <link>https://ryuzu2048.github.io/about/</link>
         <pubDate>Sun, 05 Feb 2023 00:00:00 +0000</pubDate>
         
-        <guid>/about/</guid>
+        <guid>https://ryuzu2048.github.io/about/</guid>
         <description>&lt;h1 id=&#34;紹介&#34;&gt;紹介&lt;/h1&gt;
 &lt;p&gt;睡眠不足の人&lt;/p&gt;
 &lt;p&gt;最近改善されつつあるらしい&lt;/p&gt;
@@ -2050,10 +2050,10 @@ language for all programming languages.
         </item>
         <item>
         <title>hugoserverコマンドメモ</title>
-        <link>/post/2/</link>
+        <link>https://ryuzu2048.github.io/post/2/</link>
         <pubDate>Sun, 05 Feb 2023 00:00:00 +0000</pubDate>
         
-        <guid>/post/2/</guid>
+        <guid>https://ryuzu2048.github.io/post/2/</guid>
         <description>&lt;h2 id=&#34;結論&#34;&gt;結論&lt;/h2&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -2086,20 +2086,20 @@ language for all programming languages.
         </item>
         <item>
         <title>おはよう世界</title>
-        <link>/post/1/</link>
+        <link>https://ryuzu2048.github.io/post/1/</link>
         <pubDate>Sun, 05 Feb 2023 00:00:00 +0000</pubDate>
         
-        <guid>/post/1/</guid>
+        <guid>https://ryuzu2048.github.io/post/1/</guid>
         <description>&lt;p&gt;初投稿です。&lt;/p&gt;
 &lt;p&gt;睡眠に支障をきたさない程度に更新します。&lt;/p&gt;
 </description>
         </item>
         <item>
         <title>プライバシーポリシー</title>
-        <link>/privacy-policy/</link>
+        <link>https://ryuzu2048.github.io/privacy-policy/</link>
         <pubDate>Sun, 05 Feb 2023 00:00:00 +0000</pubDate>
         
-        <guid>/privacy-policy/</guid>
+        <guid>https://ryuzu2048.github.io/privacy-policy/</guid>
         <description>&lt;h1 id=&#34;アナリティクス&#34;&gt;アナリティクス&lt;/h1&gt;
 &lt;h2 id=&#34;googleアナリティクス&#34;&gt;Googleアナリティクス&lt;/h2&gt;
 &lt;p&gt;当サイトでは、Googleによるアクセス解析ツール「Googleアナリティクス」を使用しています。このGoogleアナリティクスはデータの収集のためにCookieを使用しています。このデータは匿名で収集されており、個人を特定するものではありません。&lt;br&gt;
@@ -2110,18 +2110,18 @@ language for all programming languages.
         </item>
         <item>
         <title>Archives</title>
-        <link>/archives/</link>
+        <link>https://ryuzu2048.github.io/archives/</link>
         <pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate>
         
-        <guid>/archives/</guid>
+        <guid>https://ryuzu2048.github.io/archives/</guid>
         <description></description>
         </item>
         <item>
         <title>Search</title>
-        <link>/search/</link>
+        <link>https://ryuzu2048.github.io/search/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>/search/</guid>
+        <guid>https://ryuzu2048.github.io/search/</guid>
         <description></description>
         </item>
         

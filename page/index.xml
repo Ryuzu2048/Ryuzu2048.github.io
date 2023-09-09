@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Pages on 睡眠負債</title>
-        <link>/page/</link>
+        <link>https://ryuzu2048.github.io/page/</link>
         <description>Recent content in Pages on 睡眠負債</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
         <copyright>Ryuzu2048</copyright>
-        <lastBuildDate>Sun, 05 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="/page/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sun, 05 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://ryuzu2048.github.io/page/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>About Me</title>
-        <link>/about/</link>
+        <link>https://ryuzu2048.github.io/about/</link>
         <pubDate>Sun, 05 Feb 2023 00:00:00 +0000</pubDate>
         
-        <guid>/about/</guid>
+        <guid>https://ryuzu2048.github.io/about/</guid>
         <description>&lt;h1 id=&#34;紹介&#34;&gt;紹介&lt;/h1&gt;
 &lt;p&gt;睡眠不足の人&lt;/p&gt;
 &lt;p&gt;最近改善されつつあるらしい&lt;/p&gt;
@@ -34,10 +34,10 @@
         </item>
         <item>
         <title>プライバシーポリシー</title>
-        <link>/privacy-policy/</link>
+        <link>https://ryuzu2048.github.io/privacy-policy/</link>
         <pubDate>Sun, 05 Feb 2023 00:00:00 +0000</pubDate>
         
-        <guid>/privacy-policy/</guid>
+        <guid>https://ryuzu2048.github.io/privacy-policy/</guid>
         <description>&lt;h1 id=&#34;アナリティクス&#34;&gt;アナリティクス&lt;/h1&gt;
 &lt;h2 id=&#34;googleアナリティクス&#34;&gt;Googleアナリティクス&lt;/h2&gt;
 &lt;p&gt;当サイトでは、Googleによるアクセス解析ツール「Googleアナリティクス」を使用しています。このGoogleアナリティクスはデータの収集のためにCookieを使用しています。このデータは匿名で収集されており、個人を特定するものではありません。&lt;br&gt;
@@ -48,18 +48,18 @@
         </item>
         <item>
         <title>Archives</title>
-        <link>/archives/</link>
+        <link>https://ryuzu2048.github.io/archives/</link>
         <pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate>
         
-        <guid>/archives/</guid>
+        <guid>https://ryuzu2048.github.io/archives/</guid>
         <description></description>
         </item>
         <item>
         <title>Search</title>
-        <link>/search/</link>
+        <link>https://ryuzu2048.github.io/search/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>/search/</guid>
+        <guid>https://ryuzu2048.github.io/search/</guid>
         <description></description>
         </item>
         
