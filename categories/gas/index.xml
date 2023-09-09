@@ -1,43 +1,159 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>GAS on 睡眠負債</title>
-    <link>https://ryuzu2048.github.io/categories/gas/</link>
-    <description>Recent content in GAS on 睡眠負債</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <copyright>Copyright © 2023 Ryuzu2048</copyright>
-    <lastBuildDate>Wed, 22 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://ryuzu2048.github.io/categories/gas/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>【GAS】Google Apps Scriptの始め方</title>
-      <link>https://ryuzu2048.github.io/post/11/</link>
-      <pubDate>Wed, 22 Feb 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://ryuzu2048.github.io/post/11/</guid>
-      <description>
+    <channel>
+        <title>GAS on 睡眠負債</title>
+        <link>/categories/gas/</link>
+        <description>Recent content in GAS on 睡眠負債</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en</language>
+        <copyright>Ryuzu2048</copyright>
+        <lastBuildDate>Wed, 22 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="/categories/gas/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>【GAS】Google Apps Scriptの始め方</title>
+        <link>/post/11/</link>
+        <pubDate>Wed, 22 Feb 2023 00:00:00 +0000</pubDate>
         
-          
-            【GAS】Google Apps Scriptの始め方
-          
-          
+        <guid>/post/11/</guid>
+        <description>&lt;h1 id=&#34;google-apps-scriptの公式ページ&#34;&gt;Google Apps Scriptの公式ページ&lt;/h1&gt;
+&lt;p&gt;日本語があるが日本語は、&lt;a class=&#34;link&#34; href=&#34;https://cloud.google.com/translate/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Cloud Translation API&lt;/a&gt;を用いて翻訳されている。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://developers.google.com/apps-script&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Apps Script&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;始め方&#34;&gt;始め方&lt;/h1&gt;
+&lt;h2 id=&#34;1--google-アカウントを作成する&#34;&gt;1 : Google アカウントを作成する。&lt;/h2&gt;
+&lt;p&gt;Google アカウントの作成&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://support.google.com/accounts/answer/27441?hl=ja&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Google アカウントの作成&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;2--google-driveのurl&#34;&gt;2 : Google DriveのURL&lt;/h2&gt;
+&lt;p&gt;Google Driveを開く&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://drive.google.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Google Drive&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;3--google-driveのマイドライブ上より&#34;&gt;3 : Google Driveのマイドライブ上より&lt;/h2&gt;
+&lt;p&gt;Google Driveのマイドライブ上&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;新規&lt;/li&gt;
+&lt;li&gt;Google スプレッドシート&lt;/li&gt;
+&lt;li&gt;空白のスプレッドシート&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;4--google-スプレッドシートに移動してから&#34;&gt;4 : Google スプレッドシートに移動してから&lt;/h2&gt;
+&lt;p&gt;Google スプレッドシート&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;拡張機能&lt;/li&gt;
+&lt;li&gt;Apps Script&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;5--どこに書くの&#34;&gt;5 : どこに書くの？&lt;/h2&gt;
+&lt;p&gt;Apps Script&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;function myFunction() {
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id=&#34;6--スクリプト例&#34;&gt;6 : スクリプト例&lt;/h2&gt;
+&lt;p&gt;以下のスクリプトをコード.gsに書く。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;function myFunction() {
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  console.log(&amp;#39;初めての実行&amp;#39;)
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id=&#34;7--実行と実行ログ&#34;&gt;7 : 実行と実行ログ&lt;/h2&gt;
+&lt;p&gt;実行をクリック&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;実行ログ
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;&lt;strong&gt;hh:mm:ss&lt;/strong&gt;&lt;/th&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;&lt;strong&gt;お知らせ&lt;/strong&gt;&lt;/th&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;&lt;strong&gt;実行開始&lt;/strong&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;strong&gt;hh:mm:ss&lt;/strong&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;strong&gt;情報&lt;/strong&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;strong&gt;初めての実行&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;strong&gt;hh:mm:ss&lt;/strong&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;strong&gt;お知らせ&lt;/strong&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;strong&gt;実行完了&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        <item>
+        <title>【GAS】Discord Webhookでフォーラムに新しい投稿をする方法</title>
+        <link>/post/10/</link>
+        <pubDate>Sat, 18 Feb 2023 00:00:00 +0000</pubDate>
         
-      </description>
-    </item>
-    
-    <item>
-      <title>【GAS】Discord Webhookでフォーラムに新しい投稿をする方法</title>
-      <link>https://ryuzu2048.github.io/post/10/</link>
-      <pubDate>Sat, 18 Feb 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://ryuzu2048.github.io/post/10/</guid>
-      <description>
+        <guid>/post/10/</guid>
+        <description>&lt;h1 id=&#34;discordフォーラムとは&#34;&gt;Discordフォーラムとは&lt;/h1&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://support.discord.com/hc/ja/articles/6208479917079-%E3%83%95%E3%82%A9%E3%83%BC%E3%83%A9%E3%83%A0%E3%83%81%E3%83%A3%E3%83%B3%E3%83%8D%E3%83%AB&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;フォーラムチャンネル&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&#34;結論&#34;&gt;結論&lt;/h1&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;const discordWebHookURL = &amp;#34;&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;var message1 = {
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &amp;#34;thread_name&amp;#34;: &amp;#34;スレッドの名前をここに入力&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;var param1 = {
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &amp;#34;method&amp;#34;: &amp;#34;POST&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &amp;#34;headers&amp;#34;: {
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &amp;#34;Content-type&amp;#34;: &amp;#34;application/json&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &amp;#34;User-Agent&amp;#34;: &amp;#34;DiscordBot&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  },
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &amp;#34;payload&amp;#34;: JSON.stringify(message1),
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &amp;#34;muteHttpExceptions&amp;#34;: true
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;UrlFetchApp.fetch(discordWebHookURL, param1);
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h1 id=&#34;参考&#34;&gt;参考&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://discord.com/developers/docs/resources/webhook&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;DEVELOPER PORTAL - Webhook Resource - &lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
         
-          
-            【GAS】Discord Webhookでフォーラムに新しい投稿をする方法
-          
-          
-        
-      </description>
-    </item>
-    
-  </channel>
+    </channel>
 </rss>

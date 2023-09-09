@@ -1,27 +1,85 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Misskey on 睡眠負債</title>
-    <link>https://ryuzu2048.github.io/categories/misskey/</link>
-    <description>Recent content in Misskey on 睡眠負債</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <copyright>Copyright © 2023 Ryuzu2048</copyright>
-    <lastBuildDate>Mon, 27 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://ryuzu2048.github.io/categories/misskey/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>【Misskey】備忘録</title>
-      <link>https://ryuzu2048.github.io/post/14/</link>
-      <pubDate>Mon, 27 Feb 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://ryuzu2048.github.io/post/14/</guid>
-      <description>
+    <channel>
+        <title>Misskey on 睡眠負債</title>
+        <link>/categories/misskey/</link>
+        <description>Recent content in Misskey on 睡眠負債</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en</language>
+        <copyright>Ryuzu2048</copyright>
+        <lastBuildDate>Mon, 27 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="/categories/misskey/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>【Misskey】備忘録</title>
+        <link>/post/14/</link>
+        <pubDate>Mon, 27 Feb 2023 00:00:00 +0000</pubDate>
         
-          
-            【Misskey】備忘録
-          
-          
+        <guid>/post/14/</guid>
+        <description>&lt;h1 id=&#34;misskeyとは&#34;&gt;Misskeyとは&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Misskeyは分散型プラットフォーム&lt;/p&gt;
+&lt;p&gt;Misskeyはフリーかつオープンなプロジェクトで、誰でも自由にMisskeyを使ったサーバー(インスタンスと呼ばれます)を作成できるため、既に様々なインスタンスがインターネット上に公開されています。また重要な特徴として、MisskeyはActivityPubと呼ばれる分散通信プロトコルを実装しているので、どのインスタンスを選んでも他のインスタンスのユーザーとやりとりすることができます。これが分散型と言われる所以で、単一の運営者によって単一のURLで公開されるような、Twitterなどの他サービスとは根本的に異なっています。&lt;/p&gt;
+&lt;p&gt;インスタンスによって主な話題のテーマやユーザー層、言語などは異なり、自分にあったインスタンスを探すのも楽しみのひとつです(もちろん自分のインスタンスを作るのも一興です)。&lt;/p&gt;
+&lt;p&gt;&amp;mdash; &lt;cite&gt;&lt;a class=&#34;link&#34; href=&#34;https://misskey-hub.net/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Misskey Hub&lt;/a&gt;&lt;/cite&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&#34;misskeyのgithub&#34;&gt;MisskeyのGitHub&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/misskey-dev&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Misskey&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;機能&#34;&gt;機能&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://misskey-hub.net/docs/features/note.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;ノート&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://misskey-hub.net/docs/features/reaction.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;リアクション&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://misskey-hub.net/docs/features/timeline.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;タイムライン&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://misskey-hub.net/docs/features/mfm.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;MFM&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://misskey-hub.net/docs/features/custom-emoji.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;カスタム絵文字&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://misskey-hub.net/docs/features/drive.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;ドライブ&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://misskey-hub.net/docs/features/deck.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;デッキ&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://misskey-hub.net/docs/features/charts.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;チャート&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://misskey-hub.net/docs/features/online-status.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;オンラインステータス&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://misskey-hub.net/docs/features/share-form.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;共有フォーム&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://misskey-hub.net/docs/features/ads.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;広告&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://misskey-hub.net/docs/features/thread-mute.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;スレッドミュート&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://misskey-hub.net/docs/features/word-mute.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;ワードミュート&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://misskey-hub.net/docs/features/mute-and-block.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;ミュートとブロック&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://misskey-hub.net/docs/features/plugin.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;プラグイン&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://misskey-hub.net/docs/features/antenna.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;アンテナ&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://misskey-hub.net/docs/features/clip.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;クリップ&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://misskey-hub.net/docs/features/favorite.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;お気に入り&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://misskey-hub.net/docs/features/follow.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;フォロー&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://misskey-hub.net/docs/features/pages.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;ページ&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://misskey-hub.net/docs/features/theme.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;テーマ&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://misskey-hub.net/docs/features/widgets.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;ウィジェット&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;参考&#34;&gt;参考&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://misskey-hub.net/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Misskey Hub&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
         
-      </description>
-    </item>
-    
-  </channel>
+    </channel>
 </rss>

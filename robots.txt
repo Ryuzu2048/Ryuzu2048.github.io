@@ -3,4 +3,5 @@ Disallow: /categories/
 Disallow: /tags/
 Disallow: /search/
 Disallow: /privacy-policy/
+Disallow: /archives/
 Sitemap: https://ryuzu2048.github.io/sitemap.xml
